@@ -1,0 +1,60 @@
+@import './common.scss';
+.box {
+  width: 100%;
+  height: 100%;
+  .main {
+    width: 100%;
+    height: 100%;
+    padding-bottom: pr(50);
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      & > .swiper-wrapper {
+        overflow: hidden;
+        position: relative;
+        // padding-top: pr(45);
+  
+        // 第一页竖屏滚动
+        .swiper-slide{
+          position: relative;
+          .swiper-container1{
+            height: 100%;
+            .swiper-slide {
+              font-size: pr(18);
+              height: auto;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              padding: 0px pr(15);
+            }
+          }
+        }
+      }
+      .swiper-pagination {
+        background-color: #fff;
+        width: 100%;
+        top: 0;
+        height: pr(45);
+        display: flex;
+        justify-content: space-around;
+        .swiper-pagination-bullet {
+          border-radius: 0px;
+          width: 35%;
+          height: 100%;
+          opacity: 0.5;
+           background-color: #fff;
+          &:nth-child(1)::before {
+            content: '关注';
+          }
+          &:nth-child(2)::before {
+            content: '订阅';
+          }
+          &.swiper-pagination-bullet-active{
+            opacity: 1;
+          
+          }
+        }
+        
+      }
+    }
+  }
+}
