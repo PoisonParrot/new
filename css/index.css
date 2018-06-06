@@ -60,20 +60,24 @@ footer a span {
   height: 100%;
 }
 .box .main .swiper-container > .swiper-wrapper {
-  overflow: hidden;
   position: relative;
 }
 .box .main .swiper-container > .swiper-wrapper .swiper-slide {
+  padding-top: 1.40625rem;
   position: relative;
 }
 .box .main .swiper-container > .swiper-wrapper .swiper-slide .swiper-container1 {
   height: 100%;
 }
 .box .main .swiper-container > .swiper-wrapper .swiper-slide .swiper-container1 .swiper-slide {
-  font-size: 0.5625rem;
   height: auto;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 0px 0.46875rem;
+}
+.box .main .swiper-container > .swiper-wrapper .swiper-slide .swiper-container2 {
+  height: 100%;
+}
+.box .main .swiper-container > .swiper-wrapper .swiper-slide .swiper-container2 .swiper-slide {
+  height: auto;
   padding: 0px 0.46875rem;
 }
 .box .main .swiper-container .swiper-pagination {
